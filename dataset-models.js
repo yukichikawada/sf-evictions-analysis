@@ -39,16 +39,89 @@ const pieCharts = { // 20 objects
   }
 }
 
-neighborhoodTypes(evictions) = {
+function neighborhoodTypes(evictions) {
   let i = 0;
   const neighborhoods = [];
   for (i; i < evictions.length; i++) {
-    if (!neighborhoods.includes(evictions[i]["Neighborhoods - Analysis Boundaries"])) {
-      neighborhoods.push(evictions[i]["Neighborhoods - Analysis Boundaries"]);
+    if (!neighborhoods.includes(evictions[i]["neighborhood"])) {
+      neighborhoods.push(evictions[i]["neighborhood"]);
     }
   }
 
   return neighborhoods;
+}
+
+function countOfNeighborhoodBlanks(evictions) {
+  let i  = 0;
+  let total = 0;
+  for (i; i < evictions.length; i++) {
+    if (evictions[i]["neighborhood"] === "") {
+      total++;
+    }
+  }
+  return total; // 1401
+}
+
+years array
+if last item in years array year === thisitem
+use last item
+else
+new obj
+
+
+function yearObj(evictions) {
+  const years = [{"year": 1997}];
+
+  for (let i = 0; i < evictions.length; i++) {
+    if (i > 0 && evictions[i]["year"] === evictions[i - 1]["year"]) {
+      const year = {};
+      let objKeys = Object.keys(evictions[0]);
+      objKeys.map( key => {
+        let j = 0;
+        for (j; j < objKeys.length; j++) {
+          if (evictions[i][key] == "TRUE") {
+            if (year[key]) {
+              year[key]++;
+            } else {
+              year[key] = 1;
+            }
+          }
+        }
+      });
+
+      years.push(year);
+    } else {
+      let lastObj = years[years.length - 1];
+      let lastObjKeys = Object.keys(lastObj);
+      lastObjKeys.map( key => {
+        let j = 0;
+        for (j; j < lastObjKeys.length; j++) {
+          if (lastObj[key] == "TRUE") {
+            if (lastObj[key]) {
+              lastObj[key]++;
+            } else {
+              lastObj[key] = 1;
+            }
+          }
+        }
+      })
+      ;
+      years.push(lastObj);
+    }
+  }
+
+  return years;
+}
+
+function yearIterator(evictions) {
+  const years = [];
+  for (var i = 0; i < 1000; i++) {
+    if (!years.includes(evictions[i]["year"])) {
+      years.push(evictions[i]);
+    }
+  }
+
+  return years;
 }
 
 const neighborhoods = [
