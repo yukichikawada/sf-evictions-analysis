@@ -62,51 +62,39 @@ function countOfNeighborhoodBlanks(evictions) {
   return total; // 1401
 }
 
-years array
-if last item in years array year === thisitem
-use last item
-else
-new obj
-
 
 function yearObj(evictions) {
-  const years = [{"year": 1997}];
-
-  for (let i = 0; i < evictions.length; i++) {
-    if (i > 0 && evictions[i]["year"] === evictions[i - 1]["year"]) {
-      const year = {};
-      let objKeys = Object.keys(evictions[0]);
-      objKeys.map( key => {
-        let j = 0;
-        for (j; j < objKeys.length; j++) {
-          if (evictions[i][key] == "TRUE") {
-            if (year[key]) {
-              year[key]++;
+  const years = [];
+  for (var i = 0; i < evictions.length; i++) {
+    let lastIndex = years.length - 1;
+    if (i === 0 || years[lastIndex]["year"] === evictions[i]["year"]) { // same year
+      if (i === 0) {
+        const firstYear = {"year": evictions[i]["year"]};
+        Object.keys(evictions[i]).map(key => {
+          if (evictions[i][key] === "TRUE") {
+            firstYear[key] = 1;
+          }
+        });
+        years.push(firstYear);
+      } else {
+        Object.keys(evictions[i]).map(key => {
+          if (evictions[i][key] === "TRUE") {
+            if (years[lastIndex][key]) {
+              years[lastIndex][key]++;
             } else {
-              year[key] = 1;
+              years[lastIndex][key] = 1;
             }
           }
+        });
+      }
+    } else { // different year
+      const year = {"year": evictions[i]["year"]};
+      Object.keys(evictions[i]).map(key => {
+        if (evictions[i][key] === "TRUE") {
+          year[key] = 1;
         }
       });
-
       years.push(year);
-    } else {
-      let lastObj = years[years.length - 1];
-      let lastObjKeys = Object.keys(lastObj);
-      lastObjKeys.map( key => {
-        let j = 0;
-        for (j; j < lastObjKeys.length; j++) {
-          if (lastObj[key] == "TRUE") {
-            if (lastObj[key]) {
-              lastObj[key]++;
-            } else {
-              lastObj[key] = 1;
-            }
-          }
-        }
-      })
-      ;
-      years.push(lastObj);
     }
   }
 
@@ -115,13 +103,13 @@ function yearObj(evictions) {
 
 function yearIterator(evictions) {
   const years = [];
-  for (var i = 0; i < 1000; i++) {
+  for (var i = 0; i < evictions.length; i++) {
     if (!years.includes(evictions[i]["year"])) {
-      years.push(evictions[i]);
+      years.push(evictions[i]["year"]);
     }
   }
 
-  return years;
+  return years; // 22 years (1997...2018)
 }
 
 const neighborhoods = [
