@@ -1,6 +1,5 @@
 const years = [
   {
-    "OMI": 1225,
     "accessDenial": 13,
     "breach": 345,
     "capitalImprovement": 55,
@@ -13,6 +12,7 @@ const years = [
     "latePayments": 106,
     "nonPayment": 124,
     "nuisance": 267,
+    "OMI": 1225,
     "otherCause": 192,
     "roommateSameUnit": 104,
     "substantialRehab": 39,
@@ -20,7 +20,6 @@ const years = [
     "year": 1997,
   },
   {
-    "OMI": 1538,
     "accessDenial": 12,
     "breach": 321,
     "capitalImprovement": 27,
@@ -33,6 +32,7 @@ const years = [
     "latePayments": 95,
     "nonPayment": 144,
     "nuisance": 249,
+    "OMI": 1538,
     "otherCause": 162,
     "roommateSameUnit": 81,
     "substantialRehab": 16,
@@ -40,7 +40,6 @@ const years = [
     "year": 1998
   },
   {
-    "OMI": 872,
     "accessDenial": 11,
     "breach": 316,
     "capitalImprovement": 59,
@@ -53,6 +52,7 @@ const years = [
     "latePayments": 100,
     "nonPayment": 164,
     "nuisance": 256,
+    "OMI": 872,
     "otherCause": 73,
     "roommateSameUnit": 144,
     "substantialRehab": 1,
@@ -60,7 +60,6 @@ const years = [
     "year": 1999
   },
   {
-    "OMI": 1012,
     "accessDenial": 13,
     "breach": 382,
     "capitalImprovement": 87,
@@ -73,6 +72,7 @@ const years = [
     "latePayments": 95,
     "nonPayment": 117,
     "nuisance": 274,
+    "OMI": 1012,
     "otherCause": 108,
     "roommateSameUnit": 146,
     "substantialRehab": 4,
@@ -80,7 +80,6 @@ const years = [
     "year": 2000
   },
   {
-    "OMI": 802,
     "accessDenial": 9,
     "breach": 387,
     "capitalImprovement": 49,
@@ -93,6 +92,7 @@ const years = [
     "latePayments": 66,
     "leadRemediation": 1,
     "nonPayment": 111,
+    "OMI": 802,
     "nuisance": 267,
     "otherCause": 66,
     "roommateSameUnit": 119,
@@ -101,7 +101,6 @@ const years = [
     "year": 2001
   },
   {
-    "OMI" : 548,
     "accessDenial": 8,
     "breach": 253,
     "capitalImprovement": 64,
@@ -114,6 +113,7 @@ const years = [
     "latePayments": 71,
     "nonPayment": 94,
     "nuisance": 255,
+    "OMI" : 548,
     "otherCause": 17,
     "roommateSameUnit": 84,
     "substantialRehab": 1,
@@ -121,7 +121,6 @@ const years = [
     "year": 2002
   },
   {
-    "OMI": 357,
     "accessDenial": 7,
     "breach": 285,
     "capitalImprovement": 72,
@@ -134,6 +133,7 @@ const years = [
     "latePayments": 56,
     "nonPayment": 122,
     "nuisance": 285,
+    "OMI": 357,
     "otherCause": 38,
     "roommateSameUnit": 53,
     "substantialRehab": 2,
@@ -141,7 +141,6 @@ const years = [
     "year": 2003
   },
   {
-    "OMI": 345,
     "accessDenial": 2,
     "breach": 212,
     "capitalImprovement": 48,
@@ -153,13 +152,13 @@ const years = [
     "latePayments": 54,
     "nonPayment": 85,
     "nuisance": 234,
-    "otherCause": 34,
+    "otherCause": 34
+    "OMI": 345,
     "roommateSameUnit": 58,
     "unapprovedSubtenant": 16,
     "year": 2004
   },
   {
-    "OMI": 267,
     "accessDenial": 7,
     "breach": 293,
     "capitalImprovement": 89,
@@ -171,13 +170,13 @@ const years = [
     "nonPayment": 89,
     "nuisance": 336,
     "otherCause": 40,
+    "OMI": 267,
     "roommateSameUnit": 45,
     "unapprovedSubtenant": 14,
     "year": 2005
   },
   {
 
-    "OMI": 227,
     "accessDenial": 14,
     "breach": 280,
     "capitalImprovement": 78,
@@ -189,14 +188,14 @@ const years = [
     "latePayments": 67,
     "nonPayment": 99,
     "nuisance": 288,
-    "otherCause": 51,
+    "otherCause": 51
+    "OMI": 227,
     "roommateSameUnit": 51,
     "substantialRehab": 5,
     "unapprovedSubtenant": 23,
     "year": 2006
   },
   {
-    "OMI": 181,
     "accessDenial": 20,
     "breach": 377,
     "capitalImprovement": 56,
@@ -209,6 +208,7 @@ const years = [
     "latePayments": 80,
     "leadRemediation": 3,
     "nonPayment": 129,
+    "OMI": 181,
     "nuisance": 323,
     "otherCause": 40,
     "roommateSameUnit": 23,
@@ -216,7 +216,6 @@ const years = [
     "year": 2007
   },
   {
-    "OMI": 169,
     "accessDenial": 18,
     "breach": 378,
     "capitalImprovement": 28,
@@ -229,13 +228,13 @@ const years = [
     "latePayments": 83,
     "nonPayment": 102,
     "nuisance": 324,
+    "OMI": 169,
     "otherCause": 53,
     "roommateSameUnit": 27,
     "unapprovedSubtenant": 20,
     "year": 2008
   },
   {
-    "OMI": 120,
     "accessDenial": 13,
     "breach": 411,
     "capitalImprovement": 24,
@@ -248,6 +247,7 @@ const years = [
     "latePayments": 81,
     "leadRemediation": 3,
     "nonPayment": 111,
+    "OMI": 120,
     "nuisance": 260,
     "otherCause": 59,
     "roommateSameUnit": 25,
@@ -255,7 +255,6 @@ const years = [
     "year": 2009
   },
   {
-    "OMI": 127,
     "accessDenial": 29,
     "breach": 448,
     "capitalImprovement": 22,
@@ -268,6 +267,7 @@ const years = [
     "illegalUse": 19,
     "latePayments": 52,
     "nonPayment": 84,
+    "OMI": 127,
     "nuisance": 295,
     "otherCause": 72,
     "roommateSameUnit": 36,
@@ -275,7 +275,6 @@ const years = [
     "year": 2010
   },
   {
-    "OMI": 124,
     "accessDenial": 26,
     "breach": 536,
     "capitalImprovement": 45,
@@ -288,6 +287,7 @@ const years = [
     "latePayments": 46,
     "nonPayment": 90,
     "nuisance": 246,
+    "OMI": 124,
     "otherCause": 59,
     "roommateSameUnit": 28,
     "substantialRehab": 1,
@@ -295,7 +295,6 @@ const years = [
     "year": 2011
   },
   {
-    "OMI": 174,
     "accessDenial": 11,
     "breach": 445,
     "capitalImprovement": 28,
@@ -308,6 +307,7 @@ const years = [
     "illegalUse": 36,
     "latePayments": 59,
     "nonPayment": 80,
+    "OMI": 174,
     "nuisance": 338,
     "otherCause": 66,
     "roommateSameUnit": 37,
@@ -315,7 +315,6 @@ const years = [
     "year": 2012
   },
   {
-    "OMI": 275,
     "accessDenial": 15,
     "breach": 598,
     "capitalImprovement": 31,
@@ -328,6 +327,7 @@ const years = [
     "latePayments": 78,
     "nonPayment": 75,
     "nuisance": 359,
+    "OMI": 275,
     "otherCause": 56,
     "roommateSameUnit": 41,
     "substantialRehab": 6,
@@ -335,7 +335,6 @@ const years = [
     "year": 2013
   },
   {
-    "OMI": 318,
     "accessDenial": 13,
     "breach": 726,
     "capitalImprovement": 42,
@@ -348,13 +347,13 @@ const years = [
     "latePayments": 66,
     "nonPayment": 144,
     "nuisance": 400,
+    "OMI": 318,
     "otherCause": 48,
     "roommateSameUnit": 58,
     "unapprovedSubtenant": 19,
     "year": 2014
   },
   {
-    "OMI": 423,
     "accessDenial": 21,
     "breach": 655,
     "capitalImprovement": 46,
@@ -367,6 +366,7 @@ const years = [
     "illegalUse": 84,
     "latePayments": 93,
     "nonPayment": 119,
+    "OMI": 423,
     "nuisance": 359,
     "otherCause": 51,
     "roommateSameUnit": 46,
@@ -374,7 +374,6 @@ const years = [
     "year": 2015
   },
   {
-    "OMI": 398,
     "accessDenial": 7,
     "breach": 449,
     "capitalImprovement": 302,
@@ -387,6 +386,7 @@ const years = [
     "illegalUse": 95,
     "latePayments": 126,
     "nonPayment": 128,
+    "OMI": 398,
     "nuisance": 375,
     "otherCause": 30,
     "roommateSameUnit": 76,
@@ -394,7 +394,6 @@ const years = [
     "year": 2016
   },
   {
-    "OMI": 314,
     "accessDenial": 29,
     "breach": 402,
     "capitalImprovement": 66,
@@ -407,13 +406,13 @@ const years = [
     "latePayments": 60,
     "nonPayment": 84,
     "nuisance": 313,
+    "OMI": 314,
     "otherCause": 24,
     "roommateSameUnit": 26,
     "unapprovedSubtenant": 27,
     "year": 2017
   },
   {
-    "OMI": 31,
     "accessDenial": 2,
     "breach": 61,
     "capitalImprovement": 57,
@@ -426,6 +425,7 @@ const years = [
     "nonPayment": 15,
     "nuisance": 58,
     "otherCause": 1,
+    "OMI": 31,
     "roommateSameUnit": 2,
     "unapprovedSubtenant": 6,
     "year": 2018
