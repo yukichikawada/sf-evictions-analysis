@@ -97,7 +97,7 @@ function yearObj(evictions) {
       years.push(year);
     }
   }
-
+  console.log(years);
   return years;
 }
 
