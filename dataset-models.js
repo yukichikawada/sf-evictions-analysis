@@ -1,43 +1,43 @@
-// only need three different models
-
-const bubbleGraph = { // vertical bar graph
-  "year": {           //  20 objects
-    "year": ,
-    "numEvictions": ,
-    "deltaPriorYear": ,
-    "medianHomePrice": ,
-    "homesSold": ,
-  }
-}
-
-const horizontalBarGraph = { // 37 Neighborhoods? * 20 years of data + 5 year grouping?
-  "neighborhood": {         // 41 neighborhoods
-    "name": ,
-    "numEvictions": ,
-    // "numOMI": ,
-    // "medianHomePrice": ,
-  }
-}
-
-
-const pieCharts = { // 20 objects
-  "year": {
-    "year": ,
-    "nonPayment": ,
-    "breachOfContract": ,
-    "nuisance": ,
-    "illegalUse": ,
-    "failureToSignRenewal": ,
-    "accessDenial": ,
-    "unapprovedSubtenant": ,
-    "OMI": ,
-    "demolition": ,
-    "capitalImprovement": ,
-    "substantialRehab": ,
-    "ellisAct": ,
-    "condoConversion": ,
-  }
-}
+// // only need three different models
+//
+// const bubbleGraph = { // vertical bar graph
+//   "year": {           //  20 objects
+//     "year": ,
+//     "numEvictions": ,
+//     "deltaPriorYear": ,
+//     "medianHomePrice": ,
+//     "homesSold": ,
+//   }
+// }
+//
+// const horizontalBarGraph = { // 37 Neighborhoods? * 20 years of data + 5 year grouping?
+//   "neighborhood": {         // 41 neighborhoods
+//     "name": ,
+//     "numEvictions": ,
+//     // "numOMI": ,
+//     // "medianHomePrice": ,
+//   }
+// }
+//
+//
+// const pieCharts = { // 20 objects
+//   "year": {
+//     "year": ,
+//     "nonPayment": ,
+//     "breachOfContract": ,
+//     "nuisance": ,
+//     "illegalUse": ,
+//     "failureToSignRenewal": ,
+//     "accessDenial": ,
+//     "unapprovedSubtenant": ,
+//     "OMI": ,
+//     "demolition": ,
+//     "capitalImprovement": ,
+//     "substantialRehab": ,
+//     "ellisAct": ,
+//     "condoConversion": ,
+//   }
+// }
 
 // function neighborhoodTypes(evictions) {
 //   let i = 0;
@@ -62,6 +62,53 @@ function countOfNeighborhoodBlanks(evictions) {
   return total; // 1401
 }
 
+function hoodObj(evictions) {
+  const hoods = [];
+  for (var i = 0; i < evictions.length; i++) {
+    let lastIndex = hoods.length - 1;
+    if (i === 0 || hoods[lastIndex]["neighborhood"] === evictions[i]["neighborhood"]) {
+      if (i === 0 || hoods[lastIndex]["year"] !== evictions[i]["year"]) {
+        const newObj = {
+          "neighborhood": evictions[i]["neighborhood"],
+          "count": 1,
+          "year" : evictions[i]["year"]
+        };
+        Object.keys(evictions[i]).map(key => {
+          if (evictions[i][key] === "TRUE") {
+            newObj[key] = 1;
+          }
+        });
+        hoods.push(newObj);
+      } else {
+        Object.keys(evictions[i]).map(key => {
+          if (evictions[i][key] === "TRUE") {
+            if (hoods[lastIndex][key]) {
+              hoods[lastIndex][key]++;
+              hoods[lastIndex]["count"]++;
+            } else {
+              hoods[lastIndex][key] = 1;
+              hoods[lastIndex]["count"]++;
+            }
+          }
+        })
+      }
+    } else {
+      const newHood = {
+        "year": evictions[i]["year"],
+        "count": 1,
+        "neighborhood": evictions[i]["neighborhood"]
+      };
+      Object.keys(evictions[i]).map(key => {
+        if (evictions[i][key] === "TRUE") {
+          newHood[key] = 1;
+        }
+      });
+      hoods.push(newHood);
+    }
+  }
+
+  return hoods;
+}
 
 function yearObj(evictions) {
   const years = [];
@@ -87,7 +134,7 @@ function yearObj(evictions) {
               years[lastIndex]["count"]++;
             } else {
               years[lastIndex][key] = 1;
-              years[lastIndex]["count"] = 1;
+              years[lastIndex]["count"]++;
             }
           }
         });

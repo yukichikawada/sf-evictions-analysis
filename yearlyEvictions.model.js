@@ -152,7 +152,7 @@ const years = [
     "latePayments": 54,
     "nonPayment": 85,
     "nuisance": 234,
-    "otherCause": 34
+    "otherCause": 34,
     "OMI": 345,
     "roommateSameUnit": 58,
     "unapprovedSubtenant": 16,
