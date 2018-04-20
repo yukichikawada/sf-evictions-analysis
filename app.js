@@ -58,14 +58,11 @@ function makePieChart(year) {
 
   let pieChart = d3.pie()
                       .value(d => {
-                        let type = "";
-                        type = d[Object.keys(d)[0]];
-                        if (Object.keys(d)[0] === "count" ||
-                          Object.keys(d)[0] === "leadRemediation" ||
-                          Object.keys(d)[0] === "year") {
-                          return null;
-                        } else {
-                          return type;
+                        switch (Object.keys(d)[0]) {
+                          case ("count" || "leadRemediation" || "year"):
+                            return null;
+                          default:
+                            return d[Object.keys(d)[0]];
                         }
                       })(yearData);
 
