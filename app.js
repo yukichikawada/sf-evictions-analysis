@@ -20,8 +20,8 @@ let colorScale = d3.scaleOrdinal()
 
 const minYear = d3.min(years, d => d.year);
 const maxYear = d3.max(years, d => d.year);
-const width = 700;
-const height = 700;
+const width = 750;
+const height = 750;
 
 let svg = d3.select('svg')
               .attr('width', width)
@@ -97,17 +97,17 @@ function makePieChart(year) {
       .attr('d', path);
 
   d3.select(".title")
-    .text("Eviction by type for " + year);
+    .text("Eviction by type as a whole for " + year + ", in San Francisco.");
 }
-
 
 svg.append('g')
       .attr('class', 'legendOrindal')
-      .attr('transform', 'translate(20,70)');
+      .attr('transform', 'translate(320,210)')
+      .style('font-size', '12px');
 
 let legendOrindal = d3.legendColor()
                       .shape("path", d3.symbol().type(d3.symbolTriangle).size(150)())
-                      .shapePadding(10)
+                      .shapePadding(5)
                       //use cellFilter to hide the "e" cell
                       .cellFilter(function(d){
                         if (d.label !== "e" &&
