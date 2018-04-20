@@ -1,4 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
 svg, input {
   margin: 0 auto;
   display: block;
+}
+.directions {
+  margin-top: 10px;
+  text-align: center;
+  background-color: orange;
+  height: 100px;
+}
+.directions h4 {
+  padding-top: 40px;
+}
+.footer {
+  text-align: center;
+  background-color: lightgrey;
+  height: 50px;
+}
+.footer p {
+  padding-top: 15px;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer a:visited {
+  color: blue;
 }
