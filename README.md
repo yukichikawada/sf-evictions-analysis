@@ -12,7 +12,7 @@ Inspired by analysis at [pudding.cool](https://pudding.cool/), SF Eviction Analy
 
 ### Functionality and MVP List
 
-![](https://github.com/yukichikawada/sf-evictions-analysis/blob/master/piechart-ss.png)
+![](https://github.com/yukichikawada/sf-evictions-analysis/blob/master/piechart-ss.png?raw=true)
 
 
 Users will land on an attention grabbing page and scroll down for 4 interactive graphs and analysis.
