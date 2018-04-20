@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "harp server --port $PORT",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "dependencies": {
+    "harp": "*"
+  },
+  "author": "yukichikawada@gmail.com",
   "license": "ISC"
 }
