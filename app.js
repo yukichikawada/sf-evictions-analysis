@@ -1,24 +1,43 @@
 // consts are years and hoods
-const yearsPie = [];
-for (var i = 0; i < years.length; i++) {
-  yearsPie.push(years[i].year)
-}
+
+const evictionTypes = [
+  "accessDenial", "breach", "capitalImprovement", "condoConversion",
+  "demolition", "ellisAct", "failureToSignRenewal", "illegalUse",
+  "latePayments", "leadRemediation", "nonPayment", "OMI", "nuisance",
+  "otherCause", "roommateSameUnit", "substantialRehab", "unapprovedSubtenant"
+];
+
+const colors = [
+  "#28c383", "#4e7b68", "#dd4053", "#cefe77", "#4fadd9",
+  "#872f53", "#40386a", "#133d48", "#b78f1e", "#e9b43a",
+  "#8c57f2", "#99d8d7", "#a73c62", "#3911f0", "#d515de", "#aec7e8",
+  "#a7cfc9", "black", "red", "#bac78e"
+];
 
 let colorScale = d3.scaleOrdinal()
-                      .domain(yearsPie)
-                      .range(d3.schemeCategory10);
+                      .domain(evictionTypes)
+                      .range(colors);
 
 const minYear = d3.min(years, d => d.year);
 const maxYear = d3.max(years, d => d.year);
-const width = 500;
-const height = 500;
+const width = 600;
+const height = 600;
 
-d3.select('svg')
-    .attr('width', width)
-    .attr('height', height)
-  .append('g')
+let svg = d3.select('svg')
+              .attr('width', width)
+              .attr('height', height);
+
+svg.append('g')
     .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')')
     .classed('chart', true);
+
+svg.append('text')
+      .classed('title', true)
+      .attr('x', width / 2)
+      .attr('y', 30)
+      .style('font-size', '2em')
+      .style('text-anchor', 'middle');
+
 
 makePieChart(minYear);
 
@@ -40,8 +59,8 @@ function makePieChart(year) {
                       .value(d => d[Object.keys(d)[0]])(yearData);
 
   let path = d3.arc()
-                  .outerRadius(width / 2 - 10)
-                  .innerRadius(width / 4);
+                  .outerRadius(width / 4)
+                  .innerRadius(width / 2 - 40);
 
   let update = d3.select('.chart')
                   .selectAll('.arc')
@@ -56,7 +75,14 @@ function makePieChart(year) {
     .append('path')
       .classed('arc', true)
     .merge(update)
-      .attr('fill', d => colorScale(d.data.year))
+      .attr('fill', d => {
+        let key = "";
+        key = Object.keys(d.data)[0];
+        return colorScale(key);
+      })
       .attr('stroke', 'black')
       .attr('d', path);
+
+  d3.select(".title")
+    .text("Eviction by type for " + year);
 }
