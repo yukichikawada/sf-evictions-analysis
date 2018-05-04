@@ -90,14 +90,6 @@ function makePieChart(year) {
 
 Each image is a graph which will take up the entire screen
 
-BONUS Graphs
-![](https://github.com/yukichikawada/sf-evictions-analysis/blob/master/wireframes/bubble-graph.svg)
-![](https://github.com/yukichikawada/sf-evictions-analysis/blob/master/wireframes/horizontal-bar-graph.svg)
-![](https://github.com/yukichikawada/sf-evictions-analysis/blob/master/wireframes/pie-charts.svg)
-![](https://github.com/yukichikawada/sf-evictions-analysis/blob/master/wireframes/vertical-bar-line-graph.svg)
-
-
-
 
 ### Bonus Features
 
