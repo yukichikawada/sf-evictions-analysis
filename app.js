@@ -1,10 +1,10 @@
 // consts are years and hoods
 
 const evictionTypes = [
-  "accessDenial", "breach", "capitalImprovement", "condoConversion",
-  "demolition", "ellisAct", "failureToSignRenewal", "illegalUse",
-  "latePayments", "nonPayment", "OMI", "nuisance",
-  "otherCause", "roommateSameUnit", "substantialRehab", "unapprovedSubtenant"
+  "Access Denial", "Breach of Contract", "Capital Improvement", "Condo Conversion",
+  "Demolition", "Development", "Ellis Act", "Failure To Sign Renewal",
+  "Illegal Use", "Late Payments", "Non Payment", "Owner Move In", "Nuisance",
+  "Other Cause", "Roommate Same Unit", "Substantial Rehab", "Unapproved Subtenant"
 ];
 
 const colors = [
@@ -59,7 +59,11 @@ function makePieChart(year) {
   let pieChart = d3.pie()
                       .value(d => {
                         switch (Object.keys(d)[0]) {
-                          case ("count" || "leadRemediation" || "year"):
+                          case "count":
+                            return null;
+                          case "Lead Remediation":
+                            return null;
+                          case "year":
                             return null;
                           default:
                             return d[Object.keys(d)[0]];
@@ -86,6 +90,7 @@ function makePieChart(year) {
       .classed('arc', true)
     .merge(update)
       .attr('fill', d => {
+        // debugger
         let key = "";
         key = Object.keys(d.data)[0];
         return colorScale(key);
@@ -107,9 +112,10 @@ let legendOrindal = d3.legendColor()
                       .shapePadding(5)
                       //use cellFilter to hide the "e" cell
                       .cellFilter(function(d){
+
                         if (d.label !== "e" &&
                             d.label !== "count" &&
-                            d.label !== "leadRemediation" &&
+                            d.label !== "Lead Remediation" &&
                             d.label !== "year") {
                           return true;
                         } else {
