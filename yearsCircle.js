@@ -73,8 +73,7 @@ function makePieChart(year) {
   let path = d3.arc()
                   .outerRadius(width / 4)
                   .innerRadius(width / 2 - 40)
-                  .padAngle(0.02)
-                  .cornerRadius(20);
+                  .padAngle(0.01);
 
   let update = d3.select('.chart')
                   .selectAll('.arc')
