@@ -3,6 +3,8 @@ var data2 = [];
 var yearCount = years.map(year => year.count);
 data2 = yearCount.map(yr => yr);
 
+var yearNumbers = years.map(year => year.year);
+
 var height2 = 750,
     width2 = 750,
     barwidth2 = 25,
@@ -15,13 +17,14 @@ var yScale2 = d3.scaleLinear()
 
 var xScale2 = d3.scaleBand()
                 .domain(d3.range(0, data2.length))
-                .padding(0.1)
-                .range([0, width2]);
+                // .padding(0.1)
+                .range([0, width2 - 30]);
 
 var toolTip2 = d3.select('body')
                   .append('div')
                   .style('position', 'absolute')
                   .style('padding', '0 10px')
+                  .style('background', 'pink')
                   .style('opacity', 0);
 
 var chart2 = d3.select('div.second')
@@ -77,6 +80,22 @@ chart2.transition()
   .delay((d, i) => (i * 20))
   .duration(1000)
   .ease(d3.easeElastic);
+
+var mapScale = d3.scaleLinear()
+                  .domain([1997, 2018])
+                  .range([24, width2 - 4]);
+
+var axisBot = d3.axisBottom(mapScale)
+                .tickValues(yearNumbers);
+
+ var canvas = d3.select('div.second')
+                        .append('svg')
+                        .attr('width', width2)
+                        .attr('height', height2);
+
+
+canvas.append('g').call(axisBot);
+
 
 // var vAxis2 = d3.axisLeft()
 //                 .scale(yScale2)

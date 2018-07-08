@@ -35,3 +35,7 @@ svg, input {
 .footer a:visited {
   color: blue;
 }
+
+.second {
+  padding: 50px 0;
+}

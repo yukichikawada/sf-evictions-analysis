@@ -23,7 +23,8 @@ const maxYear = d3.max(years, d => d.year);
 const width = 750;
 const height = 750;
 
-let svg = d3.select('svg')
+let svg = d3.select('div.first')
+              .append('svg')
               .attr('width', width)
               .attr('height', height);
 
