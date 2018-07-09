@@ -431,3 +431,54 @@ const years = [
     "year": 2018
   }
 ]
+
+function typeOnYear(arr) {
+    let extracted = [];
+    arr.forEach(obj => {
+        let yr = obj.year;
+        Object.keys(obj).map(category => {
+            if (category !== 'count' && category !== 'year') {
+                let freshObj = {};
+                freshObj[category] = obj[category];
+                freshObj['count'] = obj.count;
+                freshObj['year'] = yr;
+                extracted.push(freshObj);
+            }
+        });
+    });
+
+    return extracted;
+};
+
+function jsonifyData(obj) {
+    let stringify = '{';
+    Object.keys(obj).forEach(k => {
+        if (k !== 'count' && k !== 'year') {
+            stringify = stringify.concat('type:' + "'" + k + "'," + 'count:' + obj[k] + ',');
+        } else if (k !== 'count') {
+            stringify = stringify.concat(k + ':' + obj[k] + ',');
+        } else {
+            stringify = stringify.concat('total: ' + obj[k] + ',');
+        }
+    });
+    return stringify + '}';
+}
+
+var yearJSON = typeOnYear(years);
+console.log(yearJSON);
+d3.select('#jsonify')
+    .style('list-style', 'none')
+    .selectAll('li')
+    .data(yearJSON)
+    .enter()
+    .append('li')
+        .text(d => jsonifyData(d));
+
+// var testObj = {'year': 1998, 'OMI': 32, 'count': 2931};
+
+// console.log(jsonifyData(testObj));
+
+
+
+
+
