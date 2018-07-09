@@ -99,7 +99,7 @@ function makePieChart(year) {
       .attr('d', path);
 
   d3.select(".title")
-    .text("Eviction by type as a whole for " + year + ", in San Francisco.");
+    .text(year);
 }
 
 svg.append('g')

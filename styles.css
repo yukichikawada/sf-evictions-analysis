@@ -23,7 +23,7 @@ header {
 .heading-subtitle {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.5em;
-  color: black;
+  color: #2a2a2a;
   padding-bottom: 10px;
 }
 .heading-bottom {
@@ -40,7 +40,7 @@ header {
   width: 300px;
 }
 .byline {
-  color: black;
+  color: #2a2a2a;
   padding: 20px 0 10px 0;
 }
 .nav-links {
@@ -52,11 +52,21 @@ header {
 }
 .nav-anchor {
   text-decoration: none;
-  color: black;
+  color: #2a2a2a;
 }
 .nav-anchor:hover {
   color: darkgrey;
 }
 .container {
   background-color: #fafafa;
+}
+.content {
+  width: 700px;
+  margin: auto;
+  text-align: center;
+}
+.footer {
+  text-align: center;
+  height: 80px;
+  background-color: #052645;
 }
