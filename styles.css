@@ -65,10 +65,25 @@ header {
   margin: auto;
   text-align: center;
 }
+.end {
+  height: 100px;
+  background-color: #052645;
+  text-align: center;
+}
+.end-title {
+  padding-top: 30px;
+  color: #d3d3d3;
+  font-family: 'Montserrat', sans-serif;
+}
 .footer {
   text-align: center;
   height: 80px;
-  background-color: #052645;
+}
+.footer-content {
+  width: 300px;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 40px;
 }
 .tooltip {
   opacity: 0;
