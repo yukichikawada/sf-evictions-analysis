@@ -38,9 +38,9 @@ function drawPieChart(data, currentYear) {
                   .innerRadius(0);
 
   const yearData = data.filter(d => d.year === currentYear);
-  const colorScale = d3.scaleLinear()
+  const colorScale = d3.scaleOrdinal()
                         .domain(d3.extent(data, d => d.count))
-                        .range(['#2F4F4F', '#F08080']);
+                        .range(d3.schemeCategory20);
 
   const update = pie.select('.chart')
                       .selectAll('.arc')
@@ -60,7 +60,7 @@ function drawPieChart(data, currentYear) {
 }
 
 createPieChart(700, 700);
-drawPieChart(evictionsTypeOnYear, 1997);
+drawPieChart(evictionsTypeOnYear, 2008);
 
 function updateTooltip() {
   var tooltip = d3.select('.tooltip');
@@ -70,13 +70,16 @@ function updateTooltip() {
   if (isArc) {
     data = tgt.data()[0].data;
   }
-  tooltip.style('left', (d3.event.pageX = tooltip.node().offsetWidth / 2) + 'px')
-          .style('top', (d3.event.pageY - tooltip.node().offsetHeight - 10) + 'px')
+
+  tooltip.style('opacity', +isArc)
+          .style('left', (d3.event.pageX - tooltip.node().offsetWidth / 2) + 'px')
+          .style('top',  (d3.event.pageY - tooltip.node().offsetHeight - 10) + 'px');
+
 
   if (data) {
     tooltip.html(`
-                 <p>Type: ${data.type}}</p>
-                 <p>Count: ${data.count}}</p>
+                 <p>Type: ${data.type}</p>
+                 <p>Count: ${data.count} ~ ${((data.count / data.total) * 100 ).toFixed(1)}%</p>
                  `)
   }
 }
