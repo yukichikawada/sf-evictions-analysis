@@ -50,17 +50,15 @@ function drawPieChart(data, currentYear) {
         .remove();
 
   update.enter()
-    .append('path')
-      .classed('arc', true)
-      .attr('stroke', '#dff1ff')
-      .attr('stroke-width', '0.25px')
-    .merge(update)
-      .attr('fill', d => colorScale(d.data.count))
-      .attr('d', path);
+        .append('path')
+          .classed('arc', true)
+          .attr('stroke', '#dff1ff')
+          .attr('stroke-width', '0.25px')
+        .merge(update)
+          .attr('fill', d => colorScale(d.data.count))
+          .attr('d', path);
 }
 
-createPieChart(700, 700);
-drawPieChart(evictionsTypeOnYear, 2001);
 
 function updateTooltip() {
   var tooltip = d3.select('.tooltip');
@@ -84,8 +82,24 @@ function updateTooltip() {
   }
 }
 
- d3.selectAll("svg")
-        .on("mousemove touchmove", updateTooltip);
+createPieChart(700, 700);
+drawPieChart(evictionsTypeOnYear, 2001);
+
+const yearRange = d3.extent(evictionsTypeOnYear, d => d.year);
+let currentYear = yearRange[0];
+
+d3.select('#year')
+  .property('min', yearRange[0])
+  .property('max', yearRange[1])
+  .property('value', currentYear)
+  .on('input', () => {
+    currentYear = +d3.event.target.value;
+    console.log(currentYear);
+    drawPieChart(evictionsTypeOnYear, currentYear);
+  });
+
+d3.selectAll("svg")
+  .on("mousemove touchmove", updateTooltip);
 
 // let colorScale = d3.scaleOrdinal()
 //                       .domain(evictionTypes)
