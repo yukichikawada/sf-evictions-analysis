@@ -464,21 +464,12 @@ function jsonifyData(obj) {
     return stringify + '}';
 }
 
-var yearJSON = typeOnYear(years);
-console.log(yearJSON);
-d3.select('#jsonify')
-    .style('list-style', 'none')
-    .selectAll('li')
-    .data(yearJSON)
-    .enter()
-    .append('li')
-        .text(d => jsonifyData(d));
-
-// var testObj = {'year': 1998, 'OMI': 32, 'count': 2931};
-
-// console.log(jsonifyData(testObj));
-
-
-
-
+// var yearJSON = typeOnYear(years);
+// d3.select('#jsonify')
+//     .style('list-style', 'none')
+//     .selectAll('li')
+//     .data(yearJSON)
+//     .enter()
+//     .append('li')
+//         .text(d => jsonifyData(d));
 
