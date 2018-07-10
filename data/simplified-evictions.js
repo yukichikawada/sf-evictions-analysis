@@ -98,391 +98,391 @@ const evictionsTypeOnYear = [
   {
     type: 'Access Denial',
     count: 12,
-    total: 1849,
+    total: 2920,
     year: 1998
   },
   {
     type: 'Breach of Contract',
     count: 321,
-    total: 1849,
+    total: 2920,
     year: 1998
   },
   {
     type: 'Capital Improvement',
     count: 27,
-    total: 1849,
+    total: 2920,
     year: 1998
   },
   {
     type: 'Condo Conversion',
     count: 1,
-    total: 1849,
+    total: 2920,
     year: 1998
   },
   {
     type: 'Demolition',
     count: 61,
-    total: 1849,
+    total: 2920,
     year: 1998
   },
   {
     type: 'Ellis Act',
     count: 95,
-    total: 1849,
+    total: 2920,
     year: 1998
   },
   {
     type: 'Failure To Sign Renewal',
     count: 2,
-    total: 1849,
+    total: 2920,
     year: 1998
   },
   {
     type: 'Illegal Use',
     count: 17,
-    total: 1849,
+    total: 2920,
     year: 1998
   },
   {
     type: 'Late Payments',
     count: 95,
-    total: 1849,
+    total: 2920,
     year: 1998
   },
   {
     type: 'Non Payment',
     count: 144,
-    total: 1849,
+    total: 2920,
     year: 1998
   },
   {
     type: 'Nuisance',
     count: 249,
-    total: 1849,
+    total: 2920,
     year: 1998
   },
   {
     type: 'Owner Move In',
     count: 1538,
-    total: 1849,
+    total: 2920,
     year: 1998
   },
   {
     type: 'Other Cause',
     count: 162,
-    total: 1849,
+    total: 2920,
     year: 1998
   },
   {
     type: 'Roommate Same Unit',
     count: 81,
-    total: 1849,
+    total: 2920,
     year: 1998
   },
   {
     type: 'Substantial Rehab',
     count: 16,
-    total: 1849,
+    total: 2920,
     year: 1998
   },
   {
     type: 'Unapproved Subtenant',
     count: 99,
-    total: 1849,
+    total: 2920,
     year: 1998
   },
   {
     type: 'Access Denial',
     count: 11,
-    total: 1832,
+    total: 2962,
     year: 1999
   },
   {
     type: 'Breach of Contract',
     count: 316,
-    total: 1832,
+    total: 2962,
     year: 1999
   },
   {
     type: 'Capital Improvement',
     count: 59,
-    total: 1832,
+    total: 2962,
     year: 1999
   },
   {
     type: 'Condo Conversion',
     count: 2,
-    total: 1832,
+    total: 2962,
     year: 1999
   },
   {
     type: 'Demolition',
     count: 50,
-    total: 1832,
+    total: 2962,
     year: 1999
   },
   {
     type: 'Ellis Act',
     count: 423,
-    total: 1832,
+    total: 2962,
     year: 1999
   },
   {
     type: 'Failure To Sign Renewal',
     count: 3,
-    total: 1832,
+    total: 2962,
     year: 1999
   },
   {
     type: 'Illegal Use',
     count: 27,
-    total: 1832,
+    total: 2962,
     year: 1999
   },
   {
     type: 'Late Payments',
     count: 100,
-    total: 1832,
+    total: 2962,
     year: 1999
   },
   {
     type: 'Non Payment',
     count: 164,
-    total: 1832,
+    total: 2962,
     year: 1999
   },
   {
     type: 'Nuisance',
     count: 256,
-    total: 1832,
+    total: 2962,
     year: 1999
   },
   {
     type: 'Owner Move In',
     count: 872,
-    total: 1832,
+    total: 2962,
     year: 1999
   },
   {
     type: 'Other Cause',
     count: 73,
-    total: 1832,
+    total: 2962,
     year: 1999
   },
   {
     type: 'Roommate Same Unit',
     count: 144,
-    total: 1832,
+    total: 2962,
     year: 1999
   },
   {
     type: 'Substantial Rehab',
     count: 1,
-    total: 1832,
+    total: 2962,
     year: 1999
   },
   {
     type: 'Unapproved Subtenant',
     count: 191,
-    total: 1832,
+    total: 2962,
     year: 1999
   },
   {
     type: 'Access Denial',
     count: 13,
-    total: 2027,
+    total: 2655,
     year: 2000
   },
   {
     type: 'Breach of Contract',
     count: 382,
-    total: 2027,
+    total: 2655,
     year: 2000
   },
   {
     type: 'Capital Improvement',
     count: 87,
-    total: 2027,
+    total: 2655,
     year: 2000
   },
   {
     type: 'Condo Conversion',
     count: 4,
-    total: 2027,
+    total: 2655,
     year: 2000
   },
   {
     type: 'Demolition',
     count: 71,
-    total: 2027,
+    total: 2655,
     year: 2000
   },
   {
     type: 'Ellis Act',
     count: 274,
-    total: 2027,
+    total: 2655,
     year: 2000
   },
   {
     type: 'Failure To Sign Renewal',
     count: 6,
-    total: 2027,
+    total: 2655,
     year: 2000
   },
   {
     type: 'Illegal Use',
     count: 35,
-    total: 2027,
+    total: 2655,
     year: 2000
   },
   {
     type: 'Late Payments',
     count: 95,
-    total: 2027,
+    total: 2655,
     year: 2000
   },
   {
     type: 'Non Payment',
     count: 117,
-    total: 2027,
+    total: 2655,
     year: 2000
   },
   {
     type: 'Nuisance',
     count: 274,
-    total: 2027,
+    total: 2655,
     year: 2000
   },
   {
     type: 'Owner Move In',
     count: 1012,
-    total: 2027,
+    total: 2655,
     year: 2000
   },
   {
     type: 'Other Cause',
     count: 108,
-    total: 2027,
+    total: 2655,
     year: 2000
   },
   {
     type: 'Roommate Same Unit',
     count: 146,
-    total: 2027,
+    total: 2655,
     year: 2000
   },
   {
     type: 'Substantial Rehab',
     count: 4,
-    total: 2027,
+    total: 2655,
     year: 2000
   },
   {
     type: 'Unapproved Subtenant',
     count: 27,
-    total: 2027,
+    total: 2655,
     year: 2000
   },
   {
     type: 'Access Denial',
     count: 9,
-    total: 1504,
+    total: 2243,
     year: 2001
   },
   {
     type: 'Breach of Contract',
     count: 387,
-    total: 1504,
+    total: 2243,
     year: 2001
   },
   {
     type: 'Capital Improvement',
     count: 49,
-    total: 1504,
+    total: 2243,
     year: 2001
   },
   {
     type: 'Condo Conversion',
     count: 7,
-    total: 1504,
+    total: 2243,
     year: 2001
   },
   {
     type: 'Demolition',
     count: 99,
-    total: 1504,
+    total: 2243,
     year: 2001
   },
   {
     type: 'Ellis Act',
     count: 194,
-    total: 1504,
+    total: 2243,
     year: 2001
   },
   {
     type: 'Failure To Sign Renewal',
     count: 2,
-    total: 1504,
+    total: 2243,
     year: 2001
   },
   {
     type: 'Illegal Use',
     count: 36,
-    total: 1504,
+    total: 2243,
     year: 2001
   },
   {
     type: 'Late Payments',
     count: 66,
-    total: 1504,
+    total: 2243,
     year: 2001
   },
   {
     type: 'Lead Remediation',
     count: 1,
-    total: 1504,
+    total: 2243,
     year: 2001
   },
   {
     type: 'Non Payment',
     count: 111,
-    total: 1504,
+    total: 2243,
     year: 2001
   },
   {
     type: 'Owner Move In',
     count: 802,
-    total: 1504,
+    total: 2243,
     year: 2001
   },
   {
     type: 'Nuisance',
     count: 267,
-    total: 1504,
+    total: 2243,
     year: 2001
   },
   {
     type: 'Other Cause',
     count: 66,
-    total: 1504,
+    total: 2243,
     year: 2001
   },
   {
     type: 'Roommate Same Unit',
     count: 119,
-    total: 1504,
+    total: 2243,
     year: 2001
   },
   {
     type: 'Substantial Rehab',
     count: 6,
-    total: 1504,
+    total: 2243,
     year: 2001
   },
   {
     type: 'Unapproved Subtenant',
     count: 22,
-    total: 1504,
+    total: 2243,
     year: 2001
   },
   {
@@ -680,535 +680,535 @@ const evictionsTypeOnYear = [
   {
     type: 'Access Denial',
     count: 2,
-    total: 1344,
+    total: 1487,
     year: 2004
   },
   {
     type: 'Breach of Contract',
     count: 212,
-    total: 1344,
+    total: 1487,
     year: 2004
   },
   {
     type: 'Capital Improvement',
     count: 48,
-    total: 1344,
+    total: 1487,
     year: 2004
   },
   {
     type: 'Condo Conversion',
     count: 8,
-    total: 1344,
+    total: 1487,
     year: 2004
   },
   {
     type: 'Demolition',
     count: 67,
-    total: 1344,
+    total: 1487,
     year: 2004
   },
   {
     type: 'Ellis Act',
     count: 303,
-    total: 1344,
+    total: 1487,
     year: 2004
   },
   {
     type: 'Illegal Use',
     count: 21,
-    total: 1344,
+    total: 1487,
     year: 2004
   },
   {
     type: 'Late Payments',
     count: 54,
-    total: 1344,
+    total: 1487,
     year: 2004
   },
   {
     type: 'Non Payment',
     count: 85,
-    total: 1344,
+    total: 1487,
     year: 2004
   },
   {
     type: 'Nuisance',
     count: 234,
-    total: 1344,
+    total: 1487,
     year: 2004
   },
   {
     type: 'Other Cause',
     count: 34,
-    total: 1344,
+    total: 1487,
     year: 2004
   },
   {
     type: 'Owner Move In',
     count: 345,
-    total: 1344,
+    total: 1487,
     year: 2004
   },
   {
     type: 'Roommate Same Unit',
     count: 58,
-    total: 1344,
+    total: 1487,
     year: 2004
   },
   {
     type: 'Unapproved Subtenant',
     count: 16,
-    total: 1344,
+    total: 1487,
     year: 2004
   },
   {
     type: 'Access Denial',
     count: 7,
-    total: 1531,
+    total: 1626,
     year: 2005
   },
   {
     type: 'Breach of Contract',
     count: 293,
-    total: 1531,
+    total: 1626,
     year: 2005
   },
   {
     type: 'Capital Improvement',
     count: 89,
-    total: 1531,
+    total: 1626,
     year: 2005
   },
   {
     type: 'Demolition',
     count: 61,
-    total: 1531,
+    total: 1626,
     year: 2005
   },
   {
     type: 'Ellis Act',
     count: 298,
-    total: 1531,
+    total: 1626,
     year: 2005
   },
   {
     type: 'Illegal Use',
     count: 32,
-    total: 1531,
+    total: 1626,
     year: 2005
   },
   {
     type: 'Late Payments',
     count: 55,
-    total: 1531,
+    total: 1626,
     year: 2005
   },
   {
     type: 'Non Payment',
     count: 89,
-    total: 1531,
+    total: 1626,
     year: 2005
   },
   {
     type: 'Nuisance',
     count: 336,
-    total: 1531,
+    total: 1626,
     year: 2005
   },
   {
     type: 'Other Cause',
     count: 40,
-    total: 1531,
+    total: 1626,
     year: 2005
   },
   {
     type: 'Owner Move In',
     count: 267,
-    total: 1531,
+    total: 1626,
     year: 2005
   },
   {
     type: 'Roommate Same Unit',
     count: 45,
-    total: 1531,
+    total: 1626,
     year: 2005
   },
   {
     type: 'Unapproved Subtenant',
     count: 14,
-    total: 1531,
+    total: 1626,
     year: 2005
   },
   {
     type: 'Access Denial',
     count: 14,
-    total: 1122,
+    total: 1593,
     year: 2006
   },
   {
     type: 'Breach of Contract',
     count: 280,
-    total: 1122,
+    total: 1593,
     year: 2006
   },
   {
     type: 'Capital Improvement',
     count: 78,
-    total: 1122,
+    total: 1593,
     year: 2006
   },
   {
     type: 'Condo Conversion',
     count: 3,
-    total: 1122,
+    total: 1593,
     year: 2006
   },
   {
     type: 'Demolition',
     count: 42,
-    total: 1122,
+    total: 1593,
     year: 2006
   },
   {
     type: 'Ellis Act',
     count: 262,
-    total: 1122,
+    total: 1593,
     year: 2006
   },
   {
     type: 'Illegal Use',
     count: 49,
-    total: 1122,
+    total: 1593,
     year: 2006
   },
   {
     type: 'Late Payments',
     count: 67,
-    total: 1122,
+    total: 1593,
     year: 2006
   },
   {
     type: 'Non Payment',
     count: 99,
-    total: 1122,
+    total: 1593,
     year: 2006
   },
   {
     type: 'Nuisance',
     count: 288,
-    total: 1122,
+    total: 1593,
     year: 2006
   },
   {
     type: 'Other Cause',
     count: 51,
-    total: 1122,
+    total: 1593,
     year: 2006
   },
   {
     type: 'Owner Move In',
     count: 227,
-    total: 1122,
+    total: 1593,
     year: 2006
   },
   {
     type: 'Roommate Same Unit',
     count: 51,
-    total: 1122,
+    total: 1593,
     year: 2006
   },
   {
     type: 'Substantial Rehab',
     count: 5,
-    total: 1122,
+    total: 1593,
     year: 2006
   },
   {
     type: 'Unapproved Subtenant',
     count: 23,
-    total: 1122,
+    total: 1593,
     year: 2006
   },
   {
     type: 'Access Denial',
     count: 20,
-    total: 1207,
+    total: 1587,
     year: 2007
   },
   {
     type: 'Breach of Contract',
     count: 377,
-    total: 1207,
+    total: 1587,
     year: 2007
   },
   {
     type: 'Capital Improvement',
     count: 56,
-    total: 1207,
+    total: 1587,
     year: 2007
   },
   {
     type: 'Condo Conversion',
     count: 3,
-    total: 1207,
+    total: 1587,
     year: 2007
   },
   {
     type: 'Demolition',
     count: 43,
-    total: 1207,
+    total: 1587,
     year: 2007
   },
   {
     type: 'Ellis Act',
     count: 237,
-    total: 1207,
+    total: 1587,
     year: 2007
   },
   {
     type: 'Failure To Sign Renewal',
     count: 9,
-    total: 1207,
+    total: 1587,
     year: 2007
   },
   {
     type: 'Illegal Use',
     count: 38,
-    total: 1207,
+    total: 1587,
     year: 2007
   },
   {
     type: 'Late Payments',
     count: 80,
-    total: 1207,
+    total: 1587,
     year: 2007
   },
   {
     type: 'Lead Remediation',
     count: 3,
-    total: 1207,
+    total: 1587,
     year: 2007
   },
   {
     type: 'Non Payment',
     count: 129,
-    total: 1207,
+    total: 1587,
     year: 2007
   },
   {
     type: 'Owner Move In',
     count: 181,
-    total: 1207,
+    total: 1587,
     year: 2007
   },
   {
     type: 'Nuisance',
     count: 323,
-    total: 1207,
+    total: 1587,
     year: 2007
   },
   {
     type: 'Other Cause',
     count: 40,
-    total: 1207,
+    total: 1587,
     year: 2007
   },
   {
     type: 'Roommate Same Unit',
     count: 23,
-    total: 1207,
+    total: 1587,
     year: 2007
   },
   {
     type: 'Unapproved Subtenant',
     count: 16,
-    total: 1207,
+    total: 1587,
     year: 2007
   },
   {
     type: 'Access Denial',
     count: 18,
-    total: 827,
+    total: 1483,
     year: 2008
   },
   {
     type: 'Breach of Contract',
     count: 378,
-    total: 827,
+    total: 1483,
     year: 2008
   },
   {
     type: 'Capital Improvement',
     count: 28,
-    total: 827,
+    total: 1483,
     year: 2008
   },
   {
     type: 'Condo Conversion',
     count: 2,
-    total: 827,
+    total: 1483,
     year: 2008
   },
   {
     type: 'Demolition',
     count: 38,
-    total: 827,
+    total: 1483,
     year: 2008
   },
   {
     type: 'Ellis Act',
     count: 194,
-    total: 827,
+    total: 1483,
     year: 2008
   },
   {
     type: 'Failure To Sign Renewal',
     count: 2,
-    total: 827,
+    total: 1483,
     year: 2008
   },
   {
     type: 'Illegal Use',
     count: 45,
-    total: 827,
+    total: 1483,
     year: 2008
   },
   {
     type: 'Late Payments',
     count: 83,
-    total: 827,
+    total: 1483,
     year: 2008
   },
   {
     type: 'Non Payment',
     count: 102,
-    total: 827,
+    total: 1483,
     year: 2008
   },
   {
     type: 'Nuisance',
     count: 324,
-    total: 827,
+    total: 1483,
     year: 2008
   },
   {
     type: 'Owner Move In',
     count: 169,
-    total: 827,
+    total: 1483,
     year: 2008
   },
   {
     type: 'Other Cause',
     count: 53,
-    total: 827,
+    total: 1483,
     year: 2008
   },
   {
     type: 'Roommate Same Unit',
     count: 27,
-    total: 827,
+    total: 1483,
     year: 2008
   },
   {
     type: 'Unapproved Subtenant',
     count: 20,
-    total: 827,
+    total: 1483,
     year: 2008
   },
   {
     type: 'Access Denial',
     count: 13,
-    total: 679,
+    total: 1252,
     year: 2009
   },
   {
     type: 'Breach of Contract',
     count: 411,
-    total: 679,
+    total: 1252,
     year: 2009
   },
   {
     type: 'Capital Improvement',
     count: 24,
-    total: 679,
+    total: 1252,
     year: 2009
   },
   {
     type: 'Condo Conversion',
     count: 2,
-    total: 679,
+    total: 1252,
     year: 2009
   },
   {
     type: 'Demolition',
     count: 33,
-    total: 679,
+    total: 1252,
     year: 2009
   },
   {
     type: 'Ellis Act',
     count: 48,
-    total: 679,
+    total: 1252,
     year: 2009
   },
   {
     type: 'Failure To Sign Renewal',
     count: 6,
-    total: 679,
+    total: 1252,
     year: 2009
   },
   {
     type: 'Illegal Use',
     count: 36,
-    total: 679,
+    total: 1252,
     year: 2009
   },
   {
     type: 'Late Payments',
     count: 81,
-    total: 679,
+    total: 1252,
     year: 2009
   },
   {
     type: 'Lead Remediation',
     count: 3,
-    total: 679,
+    total: 1252,
     year: 2009
   },
   {
     type: 'Non Payment',
     count: 111,
-    total: 679,
+    total: 1252,
     year: 2009
   },
   {
     type: 'Owner Move In',
     count: 120,
-    total: 679,
+    total: 1252,
     year: 2009
   },
   {
     type: 'Nuisance',
     count: 260,
-    total: 679,
+    total: 1252,
     year: 2009
   },
   {
     type: 'Other Cause',
     count: 59,
-    total: 679,
+    total: 1252,
     year: 2009
   },
   {
     type: 'Roommate Same Unit',
     count: 25,
-    total: 679,
+    total: 1252,
     year: 2009
   },
   {
     type: 'Unapproved Subtenant',
     count: 20,
-    total: 679,
+    total: 1252,
     year: 2009
   },
   {
@@ -1406,283 +1406,283 @@ const evictionsTypeOnYear = [
   {
     type: 'Access Denial',
     count: 11,
-    total: 1451,
+    total: 1684,
     year: 2012
   },
   {
     type: 'Breach of Contract',
     count: 445,
-    total: 1451,
+    total: 1684,
     year: 2012
   },
   {
     type: 'Capital Improvement',
     count: 28,
-    total: 1451,
+    total: 1684,
     year: 2012
   },
   {
     type: 'Condo Conversion',
     count: 11,
-    total: 1451,
+    total: 1684,
     year: 2012
   },
   {
     type: 'Demolition',
     count: 43,
-    total: 1451,
+    total: 1684,
     year: 2012
   },
   {
     type: 'Development',
     count: 232,
-    total: 1451,
+    total: 1684,
     year: 2012
   },
   {
     type: 'Ellis Act',
     count: 99,
-    total: 1451,
+    total: 1684,
     year: 2012
   },
   {
     type: 'Failure To Sign Renewal',
     count: 7,
-    total: 1451,
+    total: 1684,
     year: 2012
   },
   {
     type: 'Illegal Use',
     count: 36,
-    total: 1451,
+    total: 1684,
     year: 2012
   },
   {
     type: 'Late Payments',
     count: 59,
-    total: 1451,
+    total: 1684,
     year: 2012
   },
   {
     type: 'Non Payment',
     count: 80,
-    total: 1451,
+    total: 1684,
     year: 2012
   },
   {
     type: 'Owner Move In',
     count: 174,
-    total: 1451,
+    total: 1684,
     year: 2012
   },
   {
     type: 'Nuisance',
     count: 338,
-    total: 1451,
+    total: 1684,
     year: 2012
   },
   {
     type: 'Other Cause',
     count: 66,
-    total: 1451,
+    total: 1684,
     year: 2012
   },
   {
     type: 'Roommate Same Unit',
     count: 37,
-    total: 1451,
+    total: 1684,
     year: 2012
   },
   {
     type: 'Unapproved Subtenant',
     count: 18,
-    total: 1451,
+    total: 1684,
     year: 2012
   },
   {
     type: 'Access Denial',
     count: 15,
-    total: 1711,
+    total: 1981,
     year: 2013
   },
   {
     type: 'Breach of Contract',
     count: 598,
-    total: 1711,
+    total: 1981,
     year: 2013
   },
   {
     type: 'Capital Improvement',
     count: 31,
-    total: 1711,
+    total: 1981,
     year: 2013
   },
   {
     type: 'Condo Conversion',
     count: 12,
-    total: 1711,
+    total: 1981,
     year: 2013
   },
   {
     type: 'Demolition',
     count: 129,
-    total: 1711,
+    total: 1981,
     year: 2013
   },
   {
     type: 'Ellis Act',
     count: 231,
-    total: 1711,
+    total: 1981,
     year: 2013
   },
   {
     type: 'Failure To Sign Renewal',
     count: 11,
-    total: 1711,
+    total: 1981,
     year: 2013
   },
   {
     type: 'Illegal Use',
     count: 45,
-    total: 1711,
+    total: 1981,
     year: 2013
   },
   {
     type: 'Late Payments',
     count: 78,
-    total: 1711,
+    total: 1981,
     year: 2013
   },
   {
     type: 'Non Payment',
     count: 75,
-    total: 1711,
+    total: 1981,
     year: 2013
   },
   {
     type: 'Nuisance',
     count: 359,
-    total: 1711,
+    total: 1981,
     year: 2013
   },
   {
     type: 'Owner Move In',
     count: 275,
-    total: 1711,
+    total: 1981,
     year: 2013
   },
   {
     type: 'Other Cause',
     count: 56,
-    total: 1711,
+    total: 1981,
     year: 2013
   },
   {
     type: 'Roommate Same Unit',
     count: 41,
-    total: 1711,
+    total: 1981,
     year: 2013
   },
   {
     type: 'Substantial Rehab',
     count: 6,
-    total: 1711,
+    total: 1981,
     year: 2013
   },
   {
     type: 'Unapproved Subtenant',
     count: 19,
-    total: 1711,
+    total: 1981,
     year: 2013
   },
   {
     type: 'Access Denial',
     count: 13,
-    total: 1895,
+    total: 2090,
     year: 2014
   },
   {
     type: 'Breach of Contract',
     count: 726,
-    total: 1895,
+    total: 2090,
     year: 2014
   },
   {
     type: 'Capital Improvement',
     count: 42,
-    total: 1895,
+    total: 2090,
     year: 2014
   },
   {
     type: 'Condo Conversion',
     count: 10,
-    total: 1895,
+    total: 2090,
     year: 2014
   },
   {
     type: 'Demolition',
     count: 48,
-    total: 1895,
+    total: 2090,
     year: 2014
   },
   {
     type: 'Ellis Act',
     count: 102,
-    total: 1895,
+    total: 2090,
     year: 2014
   },
   {
     type: 'Failure To Sign Renewal',
     count: 3,
-    total: 1895,
+    total: 2090,
     year: 2014
   },
   {
     type: 'Illegal Use',
     count: 93,
-    total: 1895,
+    total: 2090,
     year: 2014
   },
   {
     type: 'Late Payments',
     count: 66,
-    total: 1895,
+    total: 2090,
     year: 2014
   },
   {
     type: 'Non Payment',
     count: 144,
-    total: 1895,
+    total: 2090,
     year: 2014
   },
   {
     type: 'Nuisance',
     count: 400,
-    total: 1895,
+    total: 2090,
     year: 2014
   },
   {
     type: 'Owner Move In',
     count: 318,
-    total: 1895,
+    total: 2090,
     year: 2014
   },
   {
     type: 'Other Cause',
     count: 48,
-    total: 1895,
+    total: 2090,
     year: 2014
   },
   {
     type: 'Roommate Same Unit',
     count: 58,
-    total: 1895,
+    total: 2090,
     year: 2014
   },
   {
     type: 'Unapproved Subtenant',
     count: 19,
-    total: 1895,
+    total: 2090,
     year: 2014
   },
   {

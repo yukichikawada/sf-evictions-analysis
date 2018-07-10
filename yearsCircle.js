@@ -60,7 +60,7 @@ function drawPieChart(data, currentYear) {
 }
 
 createPieChart(700, 700);
-drawPieChart(evictionsTypeOnYear, 2008);
+drawPieChart(evictionsTypeOnYear, 2001);
 
 function updateTooltip() {
   var tooltip = d3.select('.tooltip');
