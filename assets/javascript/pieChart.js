@@ -63,10 +63,10 @@ function drawPieChart(data, currentYear) {
 
 
 function updateTooltip() {
-  var tooltip = d3.select('.tooltip');
-  var tgt = d3.select(d3.event.target);
-  var isArc = tgt.classed('arc');
-  var data;
+  const tooltip = d3.select('.tooltip');
+  const tgt = d3.select(d3.event.target);
+  const isArc = tgt.classed('arc');
+  let data;
   if (isArc) {
     data = tgt.data()[0].data;
   }
@@ -91,7 +91,7 @@ drawPieChart(evictionsTypeOnYear, 1997);
 const yearRange = d3.extent(evictionsTypeOnYear, d => d.year);
 let currentYear = yearRange[0];
 
-d3.select('#year')
+d3.select('#yearPie')
   .property('min', yearRange[0])
   .property('max', yearRange[1])
   .property('value', currentYear)

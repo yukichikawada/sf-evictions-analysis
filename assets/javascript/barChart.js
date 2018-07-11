@@ -43,7 +43,7 @@ function createBarChart(width, height, year) {
   xBar.domain(barData.map(d => d.neighborhood));
   yBar.domain([0, d3.max(barData, d => d.count)]).range([height, 200]);
 
-  console.log(barData)
+  d3.select("#year-val-barchart").text(currentYearBarChart);
 
   groupBarChart.append('g')
                   .attr("class", "axis axis--x")
@@ -77,11 +77,22 @@ function createBarChart(width, height, year) {
       .attr('height', d => height - yBar(d.count));
 }
 
+createBarChart(width2, height2, 1997);
+var currentYearBarChart = yearRange[0];
+d3.select("#year-val-barchart").text(currentYearBarChart);
+
+d3.select('#yearBar')
+  .property('min', yearRange[0])
+  .property('max', yearRange[1])
+  .property('value', currentYearBarChart)
+  .on('input', () => {
+    let prevBarChart = d3.select('#barchart');
+    prevBarChart.selectAll('*').remove();
+    currentYearBarChart = +d3.event.target.value;
+    createBarChart(width2, height2, currentYearBarChart);
+  });
 
 
-
-
-createBarChart(width2, height2, 2015);
 
 
 
