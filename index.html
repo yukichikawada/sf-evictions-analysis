@@ -3,17 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>SF Evictions Analysis</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link  rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans+Condensed:300">
   </head>
   <body>
     <header>
       <section class="header-top">
         <h1 class="heading-title">A Look at the Numbers</h1>
-        <h3 class="heading-subtitle">How have evictions in San Francisco changed since 1997?</h3>
+        <h3 class="heading-subtitle">
+          How have evictions in San Francisco changed since 1997?
+        </h3>
       </section>
       <div class="heading-bottom">
-        <img class="header-image" src="map_district.jpg" />
+        <img class="header-image" src="./assets/map_district.jpg" />
         <nav class="header-nav">
           <h3 class="byline">By: Yukichi Kawada</h3>
           <ul class="nav-links">
@@ -24,7 +27,10 @@
               <a href="#" class="nav-anchor">Contact</a>
             </li>
             <li class="nav-item">
-              <a href="https://github.com/yukichikawada/sf-evictions-analysis" class="nav-anchor">Github</a>
+              <a  class="nav-anchor"
+                href="https://github.com/yukichikawada/sf-evictions-analysis">
+                Github
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-anchor"
@@ -37,9 +43,10 @@
         </nav>
       </div>
     </header>
+
     <div class="container">
       <div class="content">
-        <!-- first graph -->
+        <!-- pie chart -->
         <div class="first">
           <svg 
             version="1.1"
@@ -55,19 +62,30 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- second graph -->
-      <div class="second"></div>
+    <div class="break"></div>
 
-      <div class="third"></div>
-      <div>
-        <ul id="jsonify"></ul>
+    <!-- bar chart for neighborhoods -->
+    <div class="container">
+      <div class="content">
+        <div class="second">
+          <svg
+            version="1.1"
+            baseProfile="full"
+            xmlns="http://www.w3.org/2000/svg" 
+            id="barchart">
+          </svg>
+        </div>
       </div>
     </div>
+
     <div class="tooltip"></div>
+
     <div class="end">
       <h3 class="end-title">THE END</h3>
     </div>
+
     <div class="footer">
       <section class="footer-content">
         <ul class="nav-links">
@@ -101,14 +119,14 @@
         </ul>
       </section>
     </div>
-    <script src="https://d3js.org/d3.v4.js" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js">
-    </script>
 
-    <script src="./data/yearly-evictions.model.js"></script>
-    <script src="./data/simplified-evictions.js"></script>
-    <script src="yearsCircle.js"></script>
-    <script src="./data/neighborhood-evictions.model.js"></script>
-    <script src="yearsBar.js"></script>
+    <!-- d3 import -->
+    <script src="https://d3js.org/d3.v4.js" charset="utf-8"></script>
+    <!-- pie chart import -->
+    <script src="./assets/data/pieChart.data.js"></script>
+    <script src="./assets/javascript/pieChart.js"></script>
+    <!-- bar chart import -->
+    <script src="./assets/data/neighborhoods.data.js"></script>
+    <script src="./assets/javascript/barChart.js"></script>
   </body>
 </html>
