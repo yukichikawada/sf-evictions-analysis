@@ -42,6 +42,8 @@ function drawPieChart(data, currentYear) {
                         .domain(d3.extent(data, d => d.count))
                         .range(d3.schemeCategory20);
 
+  d3.select("#year-val").text(currentYear);
+
   const update = pie.select('.chart')
                       .selectAll('.arc')
                       .data(arcs(yearData));
@@ -95,7 +97,6 @@ d3.select('#year')
   .property('value', currentYear)
   .on('input', () => {
     currentYear = +d3.event.target.value;
-    console.log(currentYear);
     drawPieChart(evictionsTypeOnYear, currentYear);
   });
 

@@ -114,3 +114,14 @@ header {
   bottom: -20px;
   margin-left: -4px;
 }
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis--x path {
+  display: none;
+}
