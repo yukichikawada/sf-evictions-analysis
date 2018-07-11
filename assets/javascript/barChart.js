@@ -32,21 +32,30 @@ function createBarChart(width, height, year) {
                       .attr('width', width)
                       .attr('height', height);
 
-  const xBar = d3.scaleBand().rangeRound([0, width]).padding(0.1);
+  const xBar = d3.scaleBand().rangeRound([0, width - margin2.right]).padding(0.1);
   const yBar = d3.scaleLinear().rangeRound([height, 0]);
 
   let groupBarChart = barChart.append('g')
-                          .attr("transform", "translate(" + margin2.left + "," + margin2.top + ")");
+                          .attr("transform", "translate(" + margin2.left + "," + -170 + ")");
 
   const barData = hoods.filter(obj => obj.year === year);
 
   xBar.domain(barData.map(d => d.neighborhood));
-  yBar.domain([0, d3.max(barData, d => d.count)]).range([height - 25, 25]);
+  yBar.domain([0, d3.max(barData, d => d.count)]).range([height, 200]);
+
+  console.log(barData)
 
   groupBarChart.append('g')
                   .attr("class", "axis axis--x")
-                  .attr("transform", "translate(0," + height + ")")
-                  .call(d3.axisBottom(xBar));
+                  // figure out what the correct height formula is here!
+                  .attr("transform", "translate(0," + 680 + ")")
+                  .call(d3.axisBottom(xBar))
+                     .selectAll("text")
+                      .attr("y", 0)
+                      .attr("x", 9)
+                      .attr("dy", ".35em")
+                      .attr("transform", "rotate(-90)")
+                      .style("text-anchor", "end");
 
   groupBarChart.append('g')
                   .attr('class', 'axis axis--y')
@@ -72,7 +81,7 @@ function createBarChart(width, height, year) {
 
 
 
-createBarChart(width2, height2, 1997);
+createBarChart(width2, height2, 2015);
 
 
 
