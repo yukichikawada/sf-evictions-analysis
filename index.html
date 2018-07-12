@@ -21,10 +21,10 @@
           <h3 class="byline">By: Yukichi Kawada</h3>
           <ul class="nav-links">
             <li class="nav-item">
-              <a href="#" class="nav-anchor">About</a>
+              <a href="#about" class="nav-anchor">About</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-anchor">Contact</a>
+              <a href="mailto:yukichikawada@gmail.com" class="nav-anchor">Contact</a>
             </li>
             <li class="nav-item">
               <a  class="nav-anchor"
@@ -48,6 +48,36 @@
       <div class="content">
         <!-- pie chart -->
         <div class="first">
+          <p class="blurb">
+            <span class="larger">San Francisco's</span> housing crisis is a topic often spoken about with 
+            the level of caution used to prevent an egg from cracking. While it's
+            good people recognize the precarious nature of homelessness, that same 
+            sensitivity frequently prevents the conversation from advancing beyond 
+            agreeing there's a problem and a fix is necessary.
+          </p>
+          <p class="blurb">
+            The purpose of this site is:
+          </p>
+          <ul class="goals">
+            <li>Use <a href="https://d3js.org/" target="_blank" rel="noopener noreferrer">d3.js</a>'s library to visualize eviction data obtained from <a href="https://data.sfgov.org/Housing-and-Buildings/Eviction-Notices/5cei-gny5/data" target="_blank" rel="noopener noreferrer">SFGOV</a>.</li>
+            <li>Show how evictions have changed since 1997.</li>
+            <li>Serve as a launching pad for data backed conversations.</li>
+          </ul>
+          <p class="blurb">
+            The purpose of this site is <strong>NOT</strong>:
+          </p>
+          <ul class="goals">
+            <li>Assign blame.</li>
+            <li>Provide a solution.</li>
+          </ul>
+          <p class="blurb">
+            Most noticeably, from 1997-2017, Owner Move In evictions have decreased
+            by nearly 50%, while Breach of Contract type evictions have roughly doubled 
+            absorbing the difference. These two types of evictions accounted for
+            44.7% of evictions in 2017.
+          </p>
+          <h4 class="section-header">Pie Chart of eviction types over the years</h4>
+          <h5>(hover over the pie to see a detailed tooltip)</h5>
           <svg 
             version="1.1"
             baseProfile="full"
@@ -59,7 +89,7 @@
           <input id="yearPie" type="range" step="1"/>
           <div class="directions">
             <h4>Move slider to see from year 1997 to 2018.</h4>
-            <h4>Current year: <span id="year-val"></span></h4>
+            <h4>Year: <span id="year-val"></span></h4>
           </div>
         </div>
       </div>
@@ -74,6 +104,14 @@
     <div class="container">
       <div class="content">
         <div class="second">
+          <p class="blurb">
+            Taking a more detailed look at how evictions are distributed across
+            neighborhoods in San Francisco, The Mission, Tenderloin, Castro, 
+            and Sunset consistently have among the most on an absolute basis.
+            A broad trend that can be gleamed from this is that evictions occur
+            more in the bottom third of the housing market.
+          </p>
+          <h4 class="section-header">Bar Chart of evictions by neighborhood</h4>
           <svg
             version="1.1"
             baseProfile="full"
@@ -85,7 +123,7 @@
           <input id="yearBar" type="range" step="1"/>
           <div class="directions">
             <h4>Move slider to see from year 1997 to 2018.</h4>
-            <h4>Current year: <span id="year-val-barchart"></span></h4>
+            <h4>Year: <span id="year-val-barchart"></span></h4>
           </div>
         
       </div>
@@ -94,6 +132,25 @@
 
     <div class="end">
       <h3 class="end-title">THE END</h3>
+    </div>
+
+    <div class="container">
+      <div class="content">
+        <div id="about">
+          <h3>About</h3>
+          <p>
+            Yukichi Kawada is a software engineer who was raised on both the 
+            Peninsula and East Bay. He considers the entire Bay Area to be his
+            home and is passionate about smart policy for the region. Before 
+            embarking on a career in software, he was a Realtor. Going back 
+            even further, he worked at a company that collects soccer stats and 
+            analysis. He is still a licensed Realtor and a big soccer fan so if
+            you'd like to talk real estate, soccer, or adding him to your 
+            development team, he responds quickest to: 
+            <a class="nav-anchor" href="mailto:yukichikawada@gmail.com">${fullname}@gmail.com</a>.
+          </p>
+        </div>
+      </div>
     </div>
 
     <div class="footer">
@@ -122,7 +179,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-anchor"
-              href="mailto:yukichikawada@gmail.com?subject=feedback">
+              href="mailto:yukichikawada@gmail.com">
               Email
             </a>
           </li>
