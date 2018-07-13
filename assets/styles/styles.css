@@ -83,6 +83,9 @@ header {
   padding-left: 80px;
   font-size: 1.2em;
 }
+.line-break {
+  margin-top: 40px;
+}
 .section-header {
   padding-top: 30px;
   text-decoration: underline;
