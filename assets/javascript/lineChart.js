@@ -4,48 +4,46 @@ const linechartWidth = 700;
 // const width2 = fullWidth2 - margin2.left - margin2.right;
 // const height2 = fullHeight2 - margin2.top - margin2.bottom;
 
-let lineChart = d3.select('#linechart')
-                  .append('svg')
-                  .attr('height', 700)
-                  .attr('width', 700);
+function lineChart(width, height) {
+  const xScale = d3.scaleLinear()
+                    .domain(d3.extent(years, d => d.year))
+                    .range([0, width]);
 
-let lineChartGroup = lineChart.append('g')
-                    .attr('transform', 'translate(' + 50 + ',' + 50 + ')');
+  const yScale = d3.scaleLinear()
+                    .domain(d3.extent(years, d => d.count))
+                    .range([height, 0]);
 
-let xPt = d3.scaleTime()
-                  .rangeRound([0, 660]);
+  const line = d3.line()
+                  .x(d => xScale(d.year))
+                  .y(d => yScale(d.count));
 
-let yPt = d3.scaleLinear()
-                  .rangeRound([640, 0]);
+  let svg = d3.select('#linechart')
+              .append('svg')
+              .attr('width', width + margin2.left + margin2.right)
+              .attr('height', height + margin2.top + margin2.bottom)
+                .append('g')
+                .attr('transform', 'translate(' + 40 + ',' + margin2.top + ')');
 
-let line = d3.line()
-              .x(d => xPt(d.year))
-              .y(d => yPt(d.count));
+  svg.append('g')
+      .attr('class', 'x axis')
+      .attr('transform', 'translate(0,' + height + ')')
+      .call(d3.axisBottom(xScale));
 
-xPt.domain(d3.extent(years, d => d.year));
-yPt.domain(d3.extent(years, d => d.count));
+  svg.append('g')
+      .attr('class', 'y axis')
+      .call(d3.axisLeft(yScale));
 
-lineChartGroup.append('g')
-          .attr('transform', 'translate(0,' + 570 + ')')
-            .call(d3.axisBottom(xPt))
-          .select('.domain')
-            .remove();
+  svg.append('path')
+      .datum(years)
+      .attr('class', 'line')
+      .attr('fill', 'none')
+      .attr('stroke', 'steelblue')
+      .attr('stroke-linejoin', 'round')
+      .attr('stroke-linecap', 'round')
+      .attr('stroke-width', 1.5)
+      .attr('d', line);
+}
 
-lineChartGroup.append('g')
-          .call(d3.axisLeft(yPt))
-          .append('text')
-            .attr('fill', '#000')
-            .attr('transform', 'rotate(-90)')
-            .attr('y', 6)
-            .attr('dy', '0.71em')
-            .attr('text-anchor', 'end')
-            .text('Count');
+lineChart(linechartWidth, linechartHeight);
 
-lineChartGroup.append('path')
-              .datum(years)
-              .attr('fill', 'none')
-              .attr('stroke', 'steelblue')
-              .attr('stroke-linejoin', 'round')
-              .attr('stroke-linecap', 'round')
-              .attr('stroke-width', 1.5)
-              .attr('d', line);
+// console.log(d3.extent(years, d => d.year))
