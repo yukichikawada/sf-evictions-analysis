@@ -42,6 +42,14 @@ function lineChart(width, height) {
       .attr('stroke-linecap', 'round')
       .attr('stroke-width', 1.5)
       .attr('d', line);
+
+  svg.selectAll('.dot')
+    .data(years)
+    .enter().append('circle')
+      .attr('class', 'dot')
+      .attr('cx', d => xScale(d.year))
+      .attr('cy', d => yScale(d.count))
+      .attr('r', 5);
 }
 
 lineChart(linechartWidth, linechartHeight);
