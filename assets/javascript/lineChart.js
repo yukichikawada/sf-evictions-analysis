@@ -6,7 +6,9 @@ const linechartWidth = 700;
 
 const dataLess2018 = years.filter(d => d.year !== 2018);
 
-function lineChart(width, height, data) {
+function lineChart(widthIn, heightIn, data) {
+  const width = widthIn - margin2.left - margin2.right;
+  const height = heightIn - margin2.top - margin2.bottom;
   const xScale = d3.scaleLinear()
                     .domain(d3.extent(years, d => d.year))
                     .range([0, width]);
