@@ -77,8 +77,8 @@ function lineTooltip() {
 
   if (data) {
     tooltip.html(`
-                 <p>Count: ${data.count}</p>
                  <p>Year: ${data.year}</p>
+                 <p>Count: ${data.count}</p>
                  `)
   }
 }
